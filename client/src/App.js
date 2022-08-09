@@ -1,46 +1,36 @@
-// import React, { useState, useEffect } from 'react';
-import React, { useEffect } from 'react';
+import { Routes, Route } from "react-router-dom";
 
-import {Container, AppBar, Typography, Grow, Grid} from '@material-ui/core';
-import { useDispatch } from 'react-redux';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Offering from "./components/Offering";
+import Contact from "./components/Contact";
+import Login from "./components/Login";
 
-import {getPosts} from './actions/posts';
-import Posts from './components/Posts/Posts';
-import Form from './components/Form/Form';
+import "./App.css";
+import HomeTemplate from "./components/HomeTemplate";
+import Create from "./components/Create";
+import Rides from "./components/Rides";
 
-import useStyles from './styles';
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomeTemplate />} />
+        <Route path="/home" element={<Header />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/offering" element={<Offering />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/rides" element={<Rides />} />
+      </Routes>
+      <Footer />
+    </>
+  );
+}
 
-
- const App = () =>{
-    const classes = useStyles();
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        dispatch(getPosts());
-    //   }, [currentId, dispatch]);
-    }, [dispatch]);
-
-      
-    return (
-        <Container maxwidth ="lg">
-            <AppBar className={classes.appBar} position="Static" color="inherit">
-                <Typography className={classes.heading} variant="h2" align = "center">Rides</Typography>
-                {/* <img src = {memories} alt = "memories" height = "60"/> */}
-            </AppBar>
-            <Grow in>
-                <Container>
-                    <Grid container justify= "space-between" alignItems = "stretch" spacing = {3}>
-                        <Grid item xs= {12} sm ={7}>
-                            <Posts />
-                        </Grid>
-                        <Grid item xs= {12} sm ={7}>
-                            <Form />
-                        </Grid>
-                    </Grid>
-                </Container>
-            </Grow>
-        </Container>
-    )
- }
-
- export default App;
+export default App;
