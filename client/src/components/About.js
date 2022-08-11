@@ -145,7 +145,7 @@ export default function about() {
             </div>
             <div className="owl-carousel testimonial-carousel" style={{"display": "flex"}}>
                 <div className="text-center pb-4">
-                    <img className="img-fluid mx-auto" src="img/review1.jpg" style={{"width": "100px", "height": "100px"}}/>
+                    <img className="img-fluid mx-auto" src="img/review1.jpg" style={{"height": "100px"}}/>
                     <div className="testimonial-text bg-white p-4 mt-n5">
                         <p className="mt-5" style={{"text-align":"left"}}>It is best website to find reasonable and quick ride. It is also user-friendly website.
                         </p>
@@ -154,7 +154,7 @@ export default function about() {
                     </div>
                 </div>
                 <div className="text-center">
-                    <img className="img-fluid mx-auto" src="img/review2.jpg" style={{"width": "100px", "height": "100px"}} />
+                    <img className="img-fluid mx-auto" src="img/review2.jpg" style={{"height": "100px"}} />
                     <div className="testimonial-text bg-white p-4 mt-n5">
                         <p className="mt-5">I was not able to find ride for montreal but I found one from this website.Really Helpful.
                         </p>
@@ -163,7 +163,7 @@ export default function about() {
                     </div>
                 </div>
                 <div className="text-center">
-                    <img className="img-fluid mx-auto" src="img/review3.jpg" style={{"width": "100px", "height": "100px"}} />
+                    <img className="img-fluid mx-auto" src="img/testimonial-2.jpg" style={{"height": "100px"}} />
                     <div className="testimonial-text bg-white p-4 mt-n5">
                         <p className="mt-5">I am a rider and this website helps me to get ride share easily.This is very useful.
                         </p>
@@ -172,7 +172,7 @@ export default function about() {
                     </div>
                 </div>
                 <div className="text-center">
-                    <img className="img-fluid mx-auto" src="img/review4.jpg" style={{"width": "100px", "height": "100px"}} />
+                    <img className="img-fluid mx-auto" src="img/review4.jpg" style={{"height": "100px"}} />
                     <div className="testimonial-text bg-white p-4 mt-n5">
                         <p className="mt-5">This is best website for earning purpose and if we want any rideshare.I finds clients  easily from this website.
                         </p>

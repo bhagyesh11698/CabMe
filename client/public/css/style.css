@@ -5,6 +5,8 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -266,6 +268,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  margin: 0 5px;
 }
 
 button:not(:disabled),
@@ -614,18 +617,24 @@ pre code {
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: 720px;
+    /* max-width: 100vw; */
+
   }
 }
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
     max-width: 960px;
+    /* max-width: 100vw; */
+
   }
 }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px;
+    /* max-width: 100vw; */
+
   }
 }
 
@@ -2365,8 +2374,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #7AB730;
-  border-color: #7AB730;
+  background-color: #3098b7;
+  border-color: #3098b7;
 }
 
 .btn-primary:hover {
@@ -2660,8 +2669,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #7AB730;
-  border-color: #7AB730;
+  color: #3098b7;
+  border-color: #3098b7;
 }
 
 .btn-outline-primary:hover {
@@ -8620,7 +8629,7 @@ button.bg-dark:focus {
   }
   .pr-lg-3,
   .px-lg-3 {
-    padding-right: 1rem !important;
+    /* padding-right: 1rem !important; */
   }
   .pb-lg-3,
   .py-lg-3 {
@@ -8628,7 +8637,7 @@ button.bg-dark:focus {
   }
   .pl-lg-3,
   .px-lg-3 {
-    padding-left: 1rem !important;
+    /* padding-left: 1rem !important; */
   }
   .p-lg-4 {
     padding: 1.5rem !important;

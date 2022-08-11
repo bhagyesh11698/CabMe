@@ -6,7 +6,7 @@ export default function HomeTemplate() {
   return (
     <>
 
-  <img src="img/Driver.jpg" alt="Logo" />
+  <img src="img/Driver.jpg" alt="Logo" style={{"height": "100vh","width":"100vw"}} />
 <Booking></Booking>
 <Rides></Rides>
     </>

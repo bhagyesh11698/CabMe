@@ -2,8 +2,8 @@ import React from "react";
 
 function navbar() {
   return (
-    <div className="container-fluid position-relative nav-bar p-0">
-      <div className="container-lg position-relative p-0 px-lg-3">
+    // <div className="container-fluid position-relative nav-bar p-0">
+    //   <div className="container-lg position-relative p-0 px-lg-3">
         <nav className="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
           <a href="/" className="navbar-brand">
             <h1 className="m-0 text-primary">
@@ -56,8 +56,8 @@ function navbar() {
             </div>
           </div>
         </nav>
-      </div>
-    </div>
+    //   </div>
+    // </div>
   );
 }
 

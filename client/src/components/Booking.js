@@ -8,7 +8,7 @@ export default function Booking() {
                 <div className="row align-items-center" style={{"min-height": "60px"}}>
                     <div className="col-md-10">
                         <div className="row">
-                            <div className="col-md-3">
+                            <div className="col-md-4">
                                 <div className="mb-3 mb-md-0">
                                     <select className="custom-select px-4" style={{"height": "47px"}}>
                                         <option selected>To</option>
@@ -18,7 +18,7 @@ export default function Booking() {
                                     </select>
                                 </div>
                             </div>
-                            <div className="col-md-3">
+                            <div className="col-md-4">
                                 <div className="mb-3 mb-md-0">
                                 <select className="custom-select px-4" style={{"height": "47px"}}>
                                         <option selected>From</option>
@@ -28,14 +28,14 @@ export default function Booking() {
                                     </select>
                                 </div>
                             </div>
-                            <div className="col-md-3">
+                            <div className="col-md-4">
                                 <div claclassName="mb-3 mb-md-0">
                                     <div className="date" id="date2" data-target-input="nearest">
                                         <input type="text" className="form-control p-4 datetimepicker-input" placeholder="Date and Time " data-target="#date2" data-toggle="datetimepicker"/>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-3">
+                            {/* <div className="col-md-3">
                                 <div className="mb-3 mb-md-0">
                                     <select className="custom-select px-4" style={{"height": "47px"}}>
                                         <option selected>Transit Medium</option>
@@ -44,7 +44,7 @@ export default function Booking() {
                                         <option value="3">UHAUL</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="col-md-2">
