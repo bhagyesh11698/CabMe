@@ -9,7 +9,7 @@ export default function header(props) {
             <div className="d-inline-flex text-white">
                 <p className="m-0 text-uppercase"><a className="text-white" >Home</a></p>
                 <i className="fa fa-angle-double-right pt-1 px-3"></i>
-                <p className="m-0 text-uppercase">props.title</p>
+                {/* <p className="m-0 text-uppercase">props.title</p> */}
             </div>
         </div>
     </div>

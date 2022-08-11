@@ -26,6 +26,9 @@ function navbar() {
               <a href="/home" className="nav-item nav-link">
                 Home
               </a>
+
+
+
               <a href="/about" className="nav-item nav-link ">
                 About
               </a>
@@ -36,17 +39,20 @@ function navbar() {
               <a href="/contact" className="nav-item nav-link">
                 Contact Us
               </a>
-              <a href="/login" className="nav-item nav-link">
+
+              <a href="/create" className="nav-item nav-link" style={{color:"blue"}}>
+                Add Ride
+              </a>
+
+              <a href="/login" className="nav-item nav-link" style={{color:"Red"}}>
                 Login
               </a>
 
-              <a href="/create" className="nav-item nav-link">
-                create
-              </a>
 
-              <a href="/rides" className="nav-item nav-link">
+
+              {/* <a href="/rides" className="nav-item nav-link">
                 rides
-              </a>
+              </a> */}
             </div>
           </div>
         </nav>

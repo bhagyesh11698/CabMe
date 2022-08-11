@@ -3,9 +3,11 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Axios from "axios";
+import {Navigate} from "react-router-dom";
 
 export default function Rides() {
   const [posts, setPosts] = useState([]);
+
   const fetchPost = async () => {
     const response = await Axios("http://localhost:5000/posts/rides");
     setPosts(response.data);
@@ -40,19 +42,18 @@ export default function Rides() {
         {posts.map((item) => (
           <Card key={item._id} style={{ width: "18rem", marginTop: "20px" }}>
             <Card.Body>
-              {item._id}
-              <Card.Title>{item.firstName}</Card.Title>
+              {/* {item._id} */}
+              <Card.Title>{item.firstName} {item.lastName}</Card.Title>
 
               <Card.Subtitle className="mb-2 text-muted">
-                {item.lastName}
+                {item.origin} to {item.destination}
               </Card.Subtitle>
-              <Card.Subtitle className="mb-2 text-muted">
-                {item.email}
-              </Card.Subtitle>
+              <Card.Text>Seats: {item.seats}</Card.Text>
 
-              <Card.Text>{item.price}</Card.Text>
+              <Card.Text>Price: {item.price}</Card.Text>
 
-              <Button variant="primary">Book Now</Button>
+          <Button><a href = "mailto:item.email" style = {{color: "white"}}>Book Now</a></Button>
+
               <Button
                 variant="danger"
                 onClick={() => handleDeleteIncome(item._id)}
