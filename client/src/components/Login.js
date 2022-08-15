@@ -5,8 +5,8 @@ export default function Login() {
     <div className="container-fluid py-5 login" >
         <div className="container py-5">
             <div className="text-center mb-3 pb-3">
-            <h6 className="text-primary text-uppercase" style={{"letter-spacing": "5px"}}>Login</h6>
-                <h1>Login As A Driver</h1>
+            {/* <h6 className="text-primary text-uppercase" style={{"letter-spacing": "5px"}}>Login</h6> */}
+                <h1>Login</h1>
             </div>
 
             {/* Login Form */}

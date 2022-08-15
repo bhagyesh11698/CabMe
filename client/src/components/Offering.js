@@ -15,12 +15,12 @@ export default function Offering() {
                         <div className="col-md-6 mb-4 pb-2">
                             <div className="blog-item">
                                 <div className="position-relative">
-                                    <img className="img-fluid w-100" src="img/safetypic.jpg" alt="" style={{"width": "350px", "height": "300px"}}/>
+                                    <img className="img-fluid w-100" src="img/safetypic.jpg" alt="" style={{"width": "350px"}}/>
                                     
                                 </div>
                                 <div className="bg-white p-4">
                                     <div className="d-flex mb-2">
-                                        <a className="text-primary text-uppercase text-decoration-none" href="">CabMe</a>
+                                        <a className="text-primary text-uppercase text-decoration-none" href="#">CabMe</a>
                                         <span className="text-primary px-2">|</span>
                                         <a className="text-primary text-uppercase text-decoration-none" href="https://www.toronto.ca/wp-content/uploads/2020/03/8d19-COVID-19-Guidance-for-Taxi-Ride-Share-Employers-Drivers-Vehicle-Owners.pdf">Safety</a>
                                     </div>
@@ -31,12 +31,12 @@ export default function Offering() {
                         <div className="col-md-6 mb-4 pb-2">
                             <div className="blog-item">
                                 <div className="position-relative">
-                                    <img className="img-fluid w-100" src="img/city.jpg" alt="" style={{"width": "350px", "height": "300px"}}/>
+                                    <img className="img-fluid w-100" src="img/city.jpg" alt="" style={{"width": "350px"}}/>
                                     
                                 </div>
                                 <div className="bg-white p-4">
                                     <div className="d-flex mb-2">
-                                        <a className="text-primary text-uppercase text-decoration-none" href="">CabMe</a>
+                                        <a className="text-primary text-uppercase text-decoration-none" href="#">CabMe</a>
                                         <span className="text-primary px-2">|</span>
                                         <a className="text-primary text-uppercase text-decoration-none" href="https://www.citycabs.ca/services">Cities</a>
                                     </div>
@@ -47,14 +47,14 @@ export default function Offering() {
                         <div className="col-md-6 mb-4 pb-2">
                             <div className="blog-item">
                                 <div className="position-relative">
-                                    <img className="img-fluid w-100" src="img/movers.jpeg" alt="" style={{"width": "350px", "height": "300px"}}/>
+                                    <img className="img-fluid w-100" src="img/movers.jpeg" alt="" style={{"width": "350px"}}/>
                                    
                                 </div>
                                 <div className="bg-white p-4">
                                     <div className="d-flex mb-2">
-                                        <a className="text-primary text-uppercase text-decoration-none" href="">CabMe</a>
+                                        <a className="text-primary text-uppercase text-decoration-none" href="#">CabMe</a>
                                         <span className="text-primary px-2">|</span>
-                                        <a className="text-primary text-uppercase text-decoration-none" href="">Movers</a>
+                                        <a className="text-primary text-uppercase text-decoration-none" href="#">Movers</a>
                                     </div>
                                     <a className="h5 m-0 text-decoration-none" href="">Available movers service to move yur home.</a>
                                 </div>
@@ -64,14 +64,14 @@ export default function Offering() {
                         <div className="col-md-6 mb-4 pb-2">
                             <div className="blog-item">
                                 <div className="position-relative">
-                                    <img className="img-fluid w-100" src="img/airport.jpg" alt=""style={{"width": "350px", "height": "300px"}}/>
+                                    <img className="img-fluid w-100" src="img/airport.jpg" alt=""style={{"width": "350px"}}/>
                                    
                                 </div>
                                 <div className="bg-white p-4">
                                     <div className="d-flex mb-2">
-                                        <a className="text-primary text-uppercase text-decoration-none" href="">CabMe</a>
+                                        <a className="text-primary text-uppercase text-decoration-none" href="#">CabMe</a>
                                         <span className="text-primary px-2">|</span>
-                                        <a className="text-primary text-uppercase text-decoration-none" href="">Airport</a>
+                                        <a className="text-primary text-uppercase text-decoration-none" href="#">Airport</a>
                                     </div>
                                     <a className="h5 m-0 text-decoration-none" href="">Access to rides at 10+ airports.Book on your Price.</a>
                                 </div>

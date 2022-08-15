@@ -70,14 +70,11 @@ export default function Rides() {
 
               <Button
                 variant="danger"
-                onClick={() => handleDeleteIncome(item._id)}
-              >
+                onClick={() => handleDeleteIncome(item._id)}>
                 Delete
               </Button>
             </Card.Body>
           </Card>
-
-          
         ))}
       </div>
 
