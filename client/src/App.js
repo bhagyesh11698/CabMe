@@ -13,6 +13,7 @@ import "./App.css";
 import HomeTemplate from "./components/HomeTemplate";
 import Create from "./components/Create";
 import Rides from "./components/Rides";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/rides" element={<Rides />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </>

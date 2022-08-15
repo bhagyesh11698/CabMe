@@ -1,9 +1,10 @@
-import express from "express";
-import bodyParser from "body-parser";
-import mongoose from "mongoose";
-import cors from "cors";
+const express = require("express");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+const cors = require("cors");
 
-import postRoutes from "./routes/posts.js";
+const postRoutes = require("./routes/posts.js");
+const userRoutes = require("./routes/user.js");
 
 const app = express();
 
@@ -12,10 +13,11 @@ app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 app.use(cors());
 
 app.use("/posts", postRoutes);
+app.use("/users", userRoutes);
 
 const CONNECTION_URL =
   "mongodb+srv://cabme:projcabme@cluster0.vlojo.mongodb.net/?retryWrites=true&w=majority";
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 mongoose
   .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })

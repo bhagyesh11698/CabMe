@@ -14,7 +14,7 @@ export default function Rides() {
   const handleShow = () => setShow(true);
 
   const fetchPost = async () => {
-    const response = await Axios("http://localhost:5000/posts/rides");
+    const response = await Axios("http://localhost:5001/posts/rides");
     setPosts(response.data);
   };
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function Rides() {
     //   setPosts(...posts, data);
     // });
 
-    Axios.delete(`http://localhost:5000/posts/rides/${key}`, {
+    Axios.delete(`http://localhost:5001/posts/rides/${key}`, {
       data: data,
     }).then(() => {
       data[key] = null;
@@ -70,11 +70,14 @@ export default function Rides() {
 
               <Button
                 variant="danger"
-                onClick={() => handleDeleteIncome(item._id)}>
+                onClick={() => handleDeleteIncome(item._id)}
+              >
                 Delete
               </Button>
             </Card.Body>
           </Card>
+
+          
         ))}
       </div>
 

@@ -1,12 +1,12 @@
-import express from "express";
+const express = require("express");
 
-import {
+const {
   getPosts,
   getPost,
   createPost,
   updatePost,
   deletePost,
-} from "../controllers/posts.js";
+} = require("../controllers/posts");
 
 const router = express.Router();
 
@@ -17,4 +17,4 @@ router.patch("/:id", updatePost);
 router.delete("/rides/:id", deletePost);
 // router.patch('/:id/likePost', likePost);
 
-export default router;
+module.exports = router;

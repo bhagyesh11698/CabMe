@@ -1,11 +1,9 @@
-import express from "express";
-import mongoose from "mongoose";
+const { Types } = require("mongoose");
 
-import PostMessage from "../models/postMessage.js";
+const { postMessage } = require("../models");
+const PostMessage = postMessage;
 
-const router = express.Router();
-
-export const getPosts = async (req, res) => {
+const getPosts = async(req, res) => {
   try {
     const postMessages = await PostMessage.find();
 
@@ -13,9 +11,9 @@ export const getPosts = async (req, res) => {
   } catch (error) {
     res.status(404).json({ message: error.message });
   }
-};
+}
 
-export const getPost = async (req, res) => {
+const getPost = async (req, res) => {
   const { id } = req.params;
 
   try {
@@ -25,9 +23,9 @@ export const getPost = async (req, res) => {
   } catch (error) {
     res.status(404).json({ message: error.message });
   }
-};
+}
 
-export const createPost = async (req, res) => {
+const createPost = async (req, res) =>  {
   const { firstName, lastName, email, price, seats, origin, destination } =
     req.body;
 
@@ -48,9 +46,9 @@ export const createPost = async (req, res) => {
   } catch (error) {
     res.status(409).json({ message: error.message });
   }
-};
+}
 
-export const updatePost = async (req, res) => {
+const updatePost = async(req, res) => {
   const { id } = req.params;
   const {
     firstName,
@@ -63,7 +61,7 @@ export const updatePost = async (req, res) => {
     date,
   } = req.body;
 
-  if (!mongoose.Types.ObjectId.isValid(id))
+  if (!Types.ObjectId.isValid(id))
     return res.status(404).send(`No post with id: ${id}`);
 
   const updatedPost = {
@@ -81,29 +79,25 @@ export const updatePost = async (req, res) => {
   await PostMessage.findByIdAndUpdate(id, updatedPost, { new: true });
 
   res.json(updatedPost);
-};
+}
 
-export const deletePost = async (req, res) => {
+const deletePost = async(req, res) => {
   const { id } = req.params;
 
-  if (!mongoose.Types.ObjectId.isValid(id))
+  if (!Types.ObjectId.isValid(id))
     return res.status(404).send(`No post with id: ${id}`);
 
   await PostMessage.findByIdAndRemove(id);
 
   res.json({ message: "Post deleted successfully." });
+}
+
+const controller = {
+  getPost,
+  getPosts,
+  createPost,
+  deletePost,
+  updatePost
 };
 
-// export const likePost = async (req, res) => {
-//     const { id } = req.params;
-
-//     if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${id}`);
-
-//     const post = await PostMessage.findById(id);
-
-//     const updatedPost = await PostMessage.findByIdAndUpdate(id, { likeCount: post.likeCount + 1 }, { new: true });
-
-//     res.json(updatedPost);
-// }
-
-export default router;
+module.exports = controller;
