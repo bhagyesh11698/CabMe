@@ -5,8 +5,11 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function Create() {
+  const navigate = useNavigate();
+
   const [postData, setPostData] = useState({
     firstName: " ",
     lastName: " ",
@@ -47,6 +50,8 @@ export default function Create() {
     })
       .then((res) => res.postData)
       .then(clear());
+
+    navigate("/");
   };
 
   return (
@@ -60,7 +65,7 @@ export default function Create() {
               type="text"
               placeholder="First name"
               // defaultValue="Mark"
-              value={postData.firstName }
+              value={postData.firstName}
               onChange={(e) =>
                 setPostData({ ...postData, firstName: e.target.value })
               }
@@ -73,7 +78,7 @@ export default function Create() {
               required
               type="text"
               placeholder="Last name"
-              value={postData.lastName }
+              value={postData.lastName}
               onChange={(e) =>
                 setPostData({ ...postData, lastName: e.target.value })
               }
@@ -90,7 +95,7 @@ export default function Create() {
                 placeholder="Email"
                 aria-describedby="inputGroupPrepend"
                 required
-                value={postData.email }
+                value={postData.email}
                 onChange={(e) =>
                   setPostData({ ...postData, email: e.target.value })
                 }
@@ -110,7 +115,7 @@ export default function Create() {
               type="number"
               placeholder="price"
               min="0"
-              value={postData.price }
+              value={postData.price}
               onChange={(e) =>
                 setPostData({ ...postData, price: e.target.value })
               }
@@ -125,7 +130,7 @@ export default function Create() {
               type="number"
               placeholder="seats"
               min="0"
-              value={postData.seats }
+              value={postData.seats}
               onChange={(e) =>
                 setPostData({ ...postData, seats: e.target.value })
               }
@@ -139,7 +144,7 @@ export default function Create() {
               required
               type="text"
               placeholder="origin"
-              value={postData.origin }
+              value={postData.origin}
               onChange={(e) =>
                 setPostData({ ...postData, origin: e.target.value.split(",") })
               }
@@ -153,7 +158,7 @@ export default function Create() {
               required
               type="text"
               placeholder="destination"
-              value={postData.destination }
+              value={postData.destination}
               onChange={(e) =>
                 setPostData({
                   ...postData,

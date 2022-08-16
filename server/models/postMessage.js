@@ -1,4 +1,4 @@
-const  mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 const postSchema = mongoose.Schema({
   firstName: String,
@@ -8,6 +8,7 @@ const postSchema = mongoose.Schema({
   seats: Number,
   origin: [String],
   destination: [String],
+  rideDate: Date,
   createdAt: {
     type: Date,
     default: new Date(),
