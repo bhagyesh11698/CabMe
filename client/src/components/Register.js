@@ -38,7 +38,7 @@ export default function Register() {
     })
       .then((res) => res.postData)
       .then(clear());
-    history("/");
+    history("/login");
   };
 
   return (

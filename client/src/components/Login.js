@@ -29,9 +29,9 @@ export default function Login() {
               email: postData.email,
               password: postData.password,
             })
-              .then((res) => res.postData)
-              .then(clear());
-            history('/')  
+              .then((res) => console.log("res.postData : ",res.data, localStorage.setItem("access",res.data.accessToken)))
+              .then(clear()).then(history('/')  )
+            
           };
     
 
@@ -49,10 +49,10 @@ export default function Login() {
                     <div className="contact-form bg-white" style={{"padding": "30px", "border-radius": "10px"}}>
                         <div id="success"></div>
                         <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                <div className="row mb-3">
-                                    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
+                                <div className="row mb-3" >
+                                    <label htmlFor="inputEmail3"  className="col-sm-2 col-form-label">Email</label>
                                     <div className="col-sm-10">
-                                    <input type="email" 
+                                    <input type="email"  required
                                     onChange={(e) =>
                                         setPostData({ ...postData, email: e.target.value })}
                                     className="form-control" id="inputEmail3" />
@@ -61,7 +61,7 @@ export default function Login() {
                                 <div className="row mb-3">
                                     <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
                                     <div className="col-sm-10">
-                                    <input type="password" 
+                                    <input type="password" required
                                     onChange={(e) =>
                                         setPostData({ ...postData, password: e.target.value })} 
                                     className="form-control" id="inputPassword3" />
