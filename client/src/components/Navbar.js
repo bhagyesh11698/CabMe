@@ -9,7 +9,6 @@ function Navbar() {
   }, [localStorage.getItem("access")]);
   const logout= (e) => {
     localStorage.clear();
-    // alert("chal niakdddd")
   };
   return (
 
