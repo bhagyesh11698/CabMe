@@ -1,17 +1,15 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-function Navbar() {
-  let [login, setLogin] = useState(false);
-
-  useEffect(() => {
-    setLogin(localStorage.getItem("access") ? true : false);
-  }, [localStorage.getItem("access")]);
-  const logout= (e) => {
-    localStorage.clear();
+function navbar() {
+  const history = useNavigate();
+  const logout = () => {
+    localStorage.removeItem('access');
+    history("/login");
   };
-  return (
 
+  return (
     // <div className="container-fluid position-relative nav-bar p-0">
     //   <div className="container-lg position-relative p-0 px-lg-3">
     <nav className="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
@@ -56,7 +54,7 @@ function Navbar() {
 
 
 
-          {login ? <a href="/logout" className="nav-item nav-link" onClick={logout} style={{ color: "Red" }}>
+          {localStorage.getItem("access") ? <a href="/" onClickCapture={logout} className="nav-item nav-link" style={{ color: "Red" }}>
             Logout
           </a> : <a href="/login" className="nav-item nav-link" style={{ color: "Red" }}>
             Login
@@ -75,8 +73,6 @@ function Navbar() {
     //   </div>
     // </div>
   );
-  
 }
 
-
-export default Navbar;
+export default navbar;

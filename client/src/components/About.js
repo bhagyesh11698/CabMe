@@ -163,7 +163,7 @@ export default function about() {
                     </div>
                 </div>
                 <div className="text-center">
-                    <img className="img-fluid mx-auto" src="img/testimonial-2.jpg" style={{"height": "100px"}} />
+                    <img className="img-fluid mx-auto" src="img/review3.jpg" style={{"height": "100px"}} />
                     <div className="testimonial-text bg-white p-4 mt-n5">
                         <p className="mt-5">I am a rider and this website helps me to get ride share easily.This is very useful.
                         </p>

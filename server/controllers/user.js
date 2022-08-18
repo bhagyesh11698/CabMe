@@ -50,11 +50,9 @@ const signin = (req, res) => {
   });
 };
 
-
-
 const controller = {
   signin,
-  signup,
+  signup
 };
 
 module.exports = controller;

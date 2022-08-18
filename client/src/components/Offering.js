@@ -15,7 +15,7 @@ export default function Offering() {
                         <div className="col-md-6 mb-4 pb-2">
                             <div className="blog-item">
                                 <div className="position-relative">
-                                    <img className="img-fluid w-100" src="img/safetypic.jpg" alt="" style={{"width": "350px"}}/>
+                                    <img className="img-fluid w-100" src="img/safetypic.jpg" alt="" style={{"height": "280px"}}/>
                                     
                                 </div>
                                 <div className="bg-white p-4">
@@ -31,7 +31,7 @@ export default function Offering() {
                         <div className="col-md-6 mb-4 pb-2">
                             <div className="blog-item">
                                 <div className="position-relative">
-                                    <img className="img-fluid w-100" src="img/city.jpg" alt="" style={{"width": "350px"}}/>
+                                    <img className="img-fluid w-100" src="img/city.jpg" alt="" style={{"height": "280px"}}/>
                                     
                                 </div>
                                 <div className="bg-white p-4">
@@ -47,7 +47,7 @@ export default function Offering() {
                         <div className="col-md-6 mb-4 pb-2">
                             <div className="blog-item">
                                 <div className="position-relative">
-                                    <img className="img-fluid w-100" src="img/movers.jpeg" alt="" style={{"width": "350px"}}/>
+                                    <img className="img-fluid w-100" src="img/movers.jpeg" alt="" style={{"height": "280px"}}/>
                                    
                                 </div>
                                 <div className="bg-white p-4">
@@ -64,7 +64,7 @@ export default function Offering() {
                         <div className="col-md-6 mb-4 pb-2">
                             <div className="blog-item">
                                 <div className="position-relative">
-                                    <img className="img-fluid w-100" src="img/airport.jpg" alt=""style={{"width": "350px"}}/>
+                                    <img className="img-fluid w-100" src="img/airport.jpg" alt=""style={{"height": "280px"}}/>
                                    
                                 </div>
                                 <div className="bg-white p-4">
@@ -100,53 +100,67 @@ export default function Offering() {
 
                     <div className="mb-5">
                         <h4 className="text-uppercase mb-4" style={{"letter-spacing": "5px"}}>Recent Post</h4>
-                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="/">
                             {/* <img class="img-fluid" src="img/blog-100x100.jpg" alt=""/> */}
                             <div className="pl-3">
-                                <h6 className="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
+                                <h6 className="m-1">Ride Available From Scarbourogh to Toronto</h6>
+                                <small>Aug 18, 2022</small>
                             </div>
                         </a>
-                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="/">
                             {/* <img class="img-fluid" src="img/blog-100x100.jpg" alt=""/> */}
                             <div className="pl-3">
-                                <h6 className="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
+                                <h6 className="m-1">Ride Available From kitchener to Toronto</h6>
+                                <small>Aug 22, 2022</small>
                             </div>
                         </a>
-                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="/">
                             {/* <img class="img-fluid" src="img/blog-100x100.jpg" alt=""/> */}
                             <div className="pl-3">
-                                <h6 className="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
+                                <h6 className="m-1">Ride Available From barrie to brampton</h6>
+                                <small>Aug 25, 2022</small>
                             </div>
                         </a>
-                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="/">
                             {/* <img class="img-fluid" src="img/blog-100x100.jpg" alt=""/> */}
                             <div className="pl-3">
-                                <h6 className="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
+                                <h6 className="m-1">Ride Available From Montreal to Brampton</h6>
+                                <small>Aug 28, 2022</small>
                             </div>
                         </a>
-                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="/">
                             {/* <img class="img-fluid" src="img/blog-100x100.jpg" alt=""/> */}
                             <div className="pl-3">
-                                <h6 className="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
+                                <h6 className="m-1">Ride Available From Niagara to Hamilton</h6>
+                                <small>Aug 17, 2022</small>
                             </div>
                         </a>
-                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="/">
                             {/* <img class="img-fluid" src="img/blog-100x100.jpg" alt=""/> */}
                             <div className="pl-3">
-                                <h6 className="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
+                                <h6 className="m-1">Ride Available From Hamilton to kitchener</h6>
+                                <small>Aug 25, 2022</small>
                             </div>
                         </a>
-                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="/">
                             {/* <img class="img-fluid" src="img/blog-100x100.jpg" alt=""/> */}
                             <div className="pl-3">
-                                <h6 className="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
+                                <h6 className="m-1">Ride Available From Brampton to Toronto</h6>
+                                <small>Aug 18, 2022</small>
+                            </div>
+                        </a>
+                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="/">
+                            {/* <img class="img-fluid" src="img/blog-100x100.jpg" alt=""/> */}
+                            <div className="pl-3">
+                                <h6 className="m-1">Ride Available From Brampton to Montreal</h6>
+                                <small>Aug 18, 2022</small>
+                            </div>
+                        </a>
+                        <a className="d-flex align-items-center text-decoration-none bg-white mb-3" href="/">
+                            {/* <img class="img-fluid" src="img/blog-100x100.jpg" alt=""/> */}
+                            <div className="pl-3">
+                                <h6 className="m-1">Ride Available From Brampton to kitchener</h6>
+                                <small>Aug 25, 2022</small>
                             </div>
                         </a>
                     </div>

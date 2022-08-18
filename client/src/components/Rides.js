@@ -92,18 +92,18 @@ export default function Rides(props) {
                 body=""
                 props={item}
               >
-                BookNow
+                Inquiry
               </Mailto>
-              <Button variant="outline-primary" onClick={handleShow}>
+              {localStorage.getItem("access") && <Button variant="outline-primary" onClick={handleShow}>
                 Update
-              </Button>
-
+              </Button>}
+              {localStorage.getItem("access") &&
               <Button
                 variant="danger"
                 onClick={() => handleDeleteIncome(item._id)}
               >
                 Delete
-              </Button>
+              </Button>}
             </Card.Body>
           </Card>
         ))}

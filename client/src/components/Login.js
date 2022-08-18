@@ -9,15 +9,14 @@ export default function Login() {
     const [postData, setPostData] = useState({
         
             email: "",
-            password: "",
+            password: ""
           });
         
           const url = "http://localhost:5001/users/signin";
           const clear = () => {
             setPostData({
               email: "",
-              password: "",
-             
+              password: ""
             });
           };
         
@@ -29,9 +28,13 @@ export default function Login() {
               email: postData.email,
               password: postData.password,
             })
-              .then((res) => console.log("res.postData : ",res.data, localStorage.setItem("access",res.data.accessToken)))
-              .then(clear()).then(history('/')  )
-            
+              .then((res) => {
+                localStorage.setItem("access",res.data.accessToken);
+              })
+              .then(clear()).then(()=>{
+                history('/rides');
+                window.location.reload(); 
+              }  )
           };
     
 
@@ -49,10 +52,10 @@ export default function Login() {
                     <div className="contact-form bg-white" style={{"padding": "30px", "border-radius": "10px"}}>
                         <div id="success"></div>
                         <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                <div className="row mb-3" >
-                                    <label htmlFor="inputEmail3"  className="col-sm-2 col-form-label">Email</label>
+                                <div className="row mb-3">
+                                    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
                                     <div className="col-sm-10">
-                                    <input type="email"  required
+                                    <input type="email" 
                                     onChange={(e) =>
                                         setPostData({ ...postData, email: e.target.value })}
                                     className="form-control" id="inputEmail3" />
@@ -61,7 +64,7 @@ export default function Login() {
                                 <div className="row mb-3">
                                     <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
                                     <div className="col-sm-10">
-                                    <input type="password" required
+                                    <input type="password" 
                                     onChange={(e) =>
                                         setPostData({ ...postData, password: e.target.value })} 
                                     className="form-control" id="inputPassword3" />
