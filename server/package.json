@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> 1a3391887159de50ed574cc501c5a84bbe693cef
     "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
